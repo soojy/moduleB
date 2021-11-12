@@ -1,0 +1,454 @@
+* {
+    --primary-color:#2e64d8;
+    --acent-color:#2e64d8;
+
+}
+.bg-d {
+    background-color: #051722;
+}
+.btn {
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid white;
+    padding: 5px 15px !important;
+    transition: .4s;
+    background: transparent !important;
+}
+.btn:hover {
+    color: white;
+    box-shadow: inset 0 0 15px 15px #ffffff1c;
+}
+.bg-second {
+    background-color: #0B2739;
+}
+.navbar {
+    max-height: 60px;
+}
+.b-radius {
+    border-radius: 1rem;
+}
+
+.navbar-brand img {
+    height: 28px ;
+    filter: invert(100%);
+}
+.navbar-link{
+    color: white;
+    text-decoration: none;
+    opacity: .7;
+}
+.navbar-link:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+.navbar-profile {
+    border: 1px solid #ffffff ;
+    opacity: 1;
+
+}
+.header {
+    position: relative;
+    min-height: 65vh;
+    background: url("../img/william-hook-Wtn654UyGYA-unsplash.jpg") center center/cover no-repeat;
+}
+.header-title {
+    font-weight: bold;
+}
+.header-subtitle {
+    font-weight: normal;
+    margin-top: 25px;
+}
+.principals {
+    margin-top: -4rem;
+    
+}
+.principals-wrapper {
+    transition: .6s;
+    transform: perspective(999px);
+}
+.principals:hover .principals-wrapper{
+    transform: perspective(999px) rotateX(5deg) translate3d(0,-16px,1px);
+    box-shadow: 0 10px 15px 15px #0b273917;
+}
+
+
+.principals .item{
+    position: relative;
+    overflow: hidden;
+    height: 275px;
+    /* width: 300px; */
+    color: white;
+    text-align: center;
+    transition: .4s;
+}
+.principals .item-bg{
+    position: absolute;
+    top: 100%;
+    transition: .3s ease-in-out;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.principals .item-bg img{
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.principals .item-text{
+    position: absolute;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.principals .item:hover .item-bg{
+    top: 0;
+}
+
+.principals .item-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+    
+}
+.principals .item-icon {
+    font-weight: bold;
+    font-size: 30px;
+}
+.principals .item-subtitle {
+    margin-top: 5px;
+    max-width: 55%;
+}
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.about .item {
+    margin: 10px;
+}
+.about .item-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    background-clip: text;
+    background: linear-gradient(to right, rgb(47, 105, 211), rgb(0, 238, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about .item-icon {
+    font-weight: bold;
+    font-size: 30px;
+}
+.about .item-subtitle {
+    margin-top: 5px;
+}
+.about-card {
+    min-width: 320px;
+    min-height: 320px;
+    background-image: linear-gradient(to right, rgba(47, 104, 211, 0.274), rgba(0, 238, 255, 0.342)), url("../img/amarnath-tade-gXs-mwiXrhA-unsplash.jpg");
+    /* background:  center center/cover no-repeat; */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: .5s;
+
+}
+.about-card:hover {
+    transform: perspective(999px) rotateY(-8deg) translate3d(0, -4px,1px);
+    box-shadow: -3 20px 15px 15px rgba(0, 0, 0, 0.027);
+}
+.search-container {
+    background-image: linear-gradient(120deg, rgba(47, 104, 211, 0.274), rgba(0, 238, 255, 0.342)), url("../img/tamas-pap-ITmbA3LVCfs-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.search-title {
+    display: block;
+    cursor: pointer;
+    
+}
+
+
+.search-input{
+    margin: 10px 0;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.144);
+    color: white;
+}
+.search-input::placeholder{
+    color: white;
+}
+.search-input:focus{
+    color: white;
+    background: rgba(255, 255, 255, 0.144);
+    outline: none !important;
+    box-shadow: none;
+    border-color: var(--acent-color);
+}
+.search-form {
+    display: none;
+}
+.search-container.active .search-form {
+    display: block;
+}
+.search-container.active .search-title  {
+    display: none;
+}
+.promo .item {
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+    margin: 1rem 0 ;
+    transition: .4s ease;
+}
+.promo .item:hover {
+    transform: perspective(999px) translate3d(0,0,25px);
+}
+.promo .item-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: .4s ease;
+
+}
+
+.promo .item-text {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+
+}
+.promo .item-title {
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.promo .item-subtitle {
+    margin: 8px 0 ;
+    max-width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.promo .item:hover .item-bg{
+    filter: brightness(60%) sepia(20%)  saturate(70%) blur(1px);
+}
+.promo .item:hover .item-text{
+    top: 0;
+}
+.subscribe {
+    background-image: linear-gradient(120deg, rgba(47, 104, 211, 0.274), rgba(0, 238, 255, 0.342)), url("../img/joel-jasmin-forestbird-N7WKDfi0yqQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.subscribe-input {
+    position: relative;
+}
+.subscribe-arrow {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    right: 12px;
+    top: 0;
+    transform: translate(0,-5%);
+}
+.footer-divider {
+    background: white;
+}
+.booking-wrapper {
+    background-color:#0B2739 ;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: white;
+}
+.booking-wrapper .title{
+    color: white;
+    
+}
+.booking-wrapper hr{
+    color: white;
+    margin-top: 1.5rem;
+}
+.booking-wrapper p{
+    margin-bottom: 0;
+}
+.tip {
+    position: relative;
+}
+.tip span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0c0e2b;
+    /* left: 50%; */
+    border-radius: 0.5rem;
+    border: 1px ridge white;
+    padding: 5px 10px;
+    font-size: 12px;
+    opacity: 0;
+    transform: translate(-110%,-2px);
+    transition: .3s;
+}
+.tip span::after {
+    content: '>';
+    position: absolute;
+    font-size: 25px;
+    right: 0;
+    top: 0;
+    transform: translate(14px,-6px);
+}
+.tip:hover span {
+    opacity: .7;
+}
+
+.flight-dash {
+    border-radius: 1rem;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 15px;
+}
+.flight-info {
+    position: relative;
+
+}
+.tip {
+    font-size: 20px;
+    margin: 5px;
+    
+}
+.flight {
+    border: 1px dashed rgba(255, 255, 255, 0.356);
+    border-radius: 1rem;
+    opacity: .95;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.flight:first-child{
+    margin-top: 0;
+}
+.flight.active {
+    opacity: 1;
+    border: 1px solid rgb(79, 155, 255);
+    padding: 10px;
+}
+.passanger {
+    position: relative;
+
+}
+.passanger::after {
+    content: 'X';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    /* background: red; */
+    border: 1px solid red;
+    color: red;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+}
+.seat {
+    align-items: center;
+    display: flex;
+
+}
+.seats-divider {
+    font-size: 20px;
+    margin: 0 5px;
+    text-align: center;
+    width: 20px;
+}
+.taked {
+    cursor: default;
+    background: rgba(255, 255, 255, 0.699) !important;
+}
+.no-dash {
+    border: none;
+}
+.red-outline {
+    border-color: rgb(196, 84, 84);
+    color: rgb(196, 84, 84);
+}
+.flight-column {
+    height: 100%;
+}
+.outline-none {
+    border: none;
+}
+.register-card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    height: 545px;
+    transition: .8s;
+    backface-visibility: hidden;
+}
+#reg {
+    transform: perspective(999px) rotateY(-180deg);
+
+}
+#login {
+    transform: perspective(999px) rotateY(180deg);
+
+}
+.register-card.active {
+    transform: perspective(999px) rotateY(0deg) !important;
+}
+
+.passanger .cross {
+    content: 'X';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    /* background: red; */
+    border: 1px solid red;
+    color: red;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    right: 10px;
+}
